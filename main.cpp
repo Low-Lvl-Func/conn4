@@ -1,1 +1,6 @@
-int main() {}
+#include "Grid.h"
+
+int main() {
+	auto grid = new Grid(6, 7);
+	return 0;
+}
