@@ -3,7 +3,7 @@
 #include <ranges>
 
 Grid::Grid(int rows, int cols) : rows(rows), cols(cols) {
-
+	this->initGrid();
 }
 
 void Grid::initGrid() {

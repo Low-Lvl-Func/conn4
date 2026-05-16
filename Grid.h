@@ -3,7 +3,7 @@
 #include <vector>
 
 using Matrix = std::vector<std::vector<int>>;
-enum GridPiece { EMPTY = 0, YELLOW = 'Y', RED = 'R' };
+enum GridPiece { EMPTY = '*', YELLOW = 'Y', RED = 'R' };
 
 class Grid {
 public:

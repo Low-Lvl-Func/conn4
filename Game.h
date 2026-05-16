@@ -12,7 +12,7 @@ class Game {
 public:
 	Game(Grid*, int connN, int targetScore, std::vector<std::unique_ptr<Player>>&);
 	void printBoard();
-	std::pair<int, int> playMove(const Player*);
+	std::pair<int, int> playMove(const Player&);
 	Player* playRound();
 	void play();
 
