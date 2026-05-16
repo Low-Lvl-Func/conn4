@@ -1,6 +1,7 @@
 #include "Game.h"
 
 #include <iostream>
+#include <cassert>
 
 Game::Game(
 	Grid* grid, 
@@ -71,5 +72,6 @@ void Game::play() {
 		maxScore = std::max(this->score[winner->getName()], maxScore);
 		this->grid->initGrid(); // reset grid
 	}
+	assert(winner != nullptr);
 	cout << winner->getName() << " won the game" << endl;
 }
